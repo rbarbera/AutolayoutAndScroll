@@ -146,7 +146,6 @@
                     <navigationItem key="navigationItem" id="82x-3Z-YjW"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <connections>
-                        <outlet property="contentView" destination="o8t-vS-wwr" id="okH-0M-wIS"/>
                         <outlet property="scrollView" destination="cYq-IS-cdP" id="RIl-3O-ind"/>
                     </connections>
                 </viewController>

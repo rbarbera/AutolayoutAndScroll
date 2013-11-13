@@ -11,7 +11,6 @@
 @interface ALSViewController ()
 
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
-@property (weak, nonatomic) IBOutlet UIView *contentView;
 
 @end
 
@@ -19,7 +18,7 @@
 
 - (IBAction)gotoBottomLabel:(id)sender
 {
-    [self.scrollView setContentOffset:CGPointMake(0, CGRectGetHeight(self.contentView.bounds)-CGRectGetHeight(self.scrollView.bounds)) animated:YES];
+    [self.scrollView setContentOffset:CGPointMake(0, self.scrollView.contentSize.height-CGRectGetHeight(self.scrollView.bounds)) animated:YES];
 }
 
 - (IBAction)gotoTopLabel:(id)sender
